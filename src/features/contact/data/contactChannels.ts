@@ -1,4 +1,5 @@
 import LinkedinLineIcon from 'remixicon-react/LinkedinLineIcon';
+import GithubLineIcon from 'remixicon-react/GithubLineIcon';
 import MailLineIcon from 'remixicon-react/MailLineIcon';
 import MapPin2LineIcon from 'remixicon-react/MapPin2LineIcon';
 import PhoneLineIcon from 'remixicon-react/PhoneLineIcon';
@@ -22,6 +23,14 @@ export const contactChannels: ContactChannel[] = [
     href: `tel:${profile.phone.replace(/\s/g, '')}`,
     icon: PhoneLineIcon,
     external: false,
+  },
+  {
+    id: 'github',
+    label: 'GitHub',
+    value: 'github.com/mohammad-ahmadii',
+    href: 'https://github.com/mohammad-ahmadii/',
+    icon: GithubLineIcon,
+    external: true,
   },
   {
     id: 'linkedin',
