@@ -1,0 +1,68 @@
+@import './fonts';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+body {
+  background-color: #0a1b2a;
+  color: #eaf2f8;
+}
+
+::selection {
+  background-color: #ffb015;
+  color: #0a1b2a;
+}
+
+:focus-visible {
+  outline: 2px solid #ffb015;
+  outline-offset: 3px;
+}
+
+/* Blueprint corner registration mark */
+.reg-mark {
+  position: relative;
+}
+.reg-mark::before,
+.reg-mark::after {
+  content: '';
+  position: absolute;
+  background: #2e5171;
+}
+.reg-mark::before {
+  width: 1px;
+  height: 14px;
+  top: -7px;
+  left: 0;
+}
+.reg-mark::after {
+  width: 14px;
+  height: 1px;
+  top: 0;
+  left: -7px;
+}
+.disabled {
+  border: gray;
+  background-color: gray;
+  color: rgb(68, 62, 62);
+}
+.disabled:hover {
+  border: gray;
+  background-color: gray !important;
+  color: rgb(68, 62, 62) !important;
+}

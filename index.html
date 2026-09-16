@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohammad Ahmadi — Personal website</title>
+    <meta
+      name="description"
+      content="Mohammad Ahmadi — Front-End Developer. Resume, experience timeline, and project portfolio."
+    />
+  </head>
+  <body>
+    <script>
+      // Companion to public/404.html: turn "/?/projects" back into
+      // "/projects" before React Router reads the location.
+      (function () {
+        var l = window.location;
+        if (l.search[1] === '/') {
+          var decoded = l.search
+            .slice(1)
+            .split('&')
+            .map(function (s) {
+              return s.replace(/~and~/g, '&');
+            })
+            .join('?');
+          window.history.replaceState(null, '', l.pathname.slice(0, -1) + decoded + l.hash);
+        }
+      })();
+    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
