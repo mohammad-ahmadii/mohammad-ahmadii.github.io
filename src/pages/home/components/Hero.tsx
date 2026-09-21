@@ -6,9 +6,9 @@ export default function Hero() {
   return (
     <section
       id={SECTIONS.top}
-      className="relative pt-32 pb-20 px-6 border-b border-line overflow-hidden"
+      className="relative pt-8 lg:pt-24 pb-20 px-6 border-b border-line overflow-hidden"
     >
-      <div className="max-w-6xl mx-auto gap-12 items-start">
+      <div className="max-w-6xl mx-auto flex gap-12 items-center lg:items-start flex-col-reverse lg:flex-row lg:justify-between">
         <div>
           <p className="font-mono text-xs tracking-[0.2em] text-signal mb-4">
             FIG. 01 — INTRODUCTION
@@ -35,6 +35,9 @@ export default function Hero() {
               VIEW EXPERIENCE
             </SectionLink>
           </div>
+        </div>
+        <div className="max-w-96 rounded-xl border-none overflow-hidden border">
+          <img src="./assets/images/avatar.png" />
         </div>
       </div>
     </section>
