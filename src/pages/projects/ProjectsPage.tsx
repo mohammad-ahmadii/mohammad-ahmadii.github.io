@@ -9,15 +9,10 @@ export default function ProjectsPage() {
   return (
     <div className="pt-8 max-w-6xl mx-auto px-4">
       <PageHeader title="Projects" />
-      <div className="flex flex-col gap-8">
-        {projects.map((project, i) => (
-          <ProjectCard
-            key={project.id}
-            project={project}
-            index={i + 1}
-            total={projects.length}
-            onPreviewImage={setPreviewed}
-          />
+      {/* <div className="flex flex-wrap gap-2 justify-center lg:justify-start"> */}
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-4">
+        {projects.map((project) => (
+          <ProjectCard key={project.id} project={project} onPreviewImage={setPreviewed} />
         ))}
         {previewed && (
           <ImageLightbox

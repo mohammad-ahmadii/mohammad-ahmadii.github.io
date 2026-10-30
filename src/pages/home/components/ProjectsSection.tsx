@@ -20,15 +20,9 @@ export default function ProjectsSection({
       <div className="max-w-6xl mx-auto">
         <SectionHeader fig={fig} title={title} />
 
-        <div className="grid gap-6">
-          {[projects[0], projects[1]].map((project, i) => (
-            <ProjectCard
-              key={project.id}
-              project={project}
-              index={i + 1}
-              total={projects.length}
-              onPreviewImage={setPreviewed}
-            />
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          {projects.slice(0, 4).map((project) => (
+            <ProjectCard key={project.id} project={project} onPreviewImage={setPreviewed} />
           ))}
           {previewed && (
             <ImageLightbox
@@ -38,14 +32,16 @@ export default function ProjectsSection({
             />
           )}
         </div>
-        <div className="flex justify-center pt-8 ">
-          <RouteLink
-            route={ROUTES.projects}
-            className="px-5 py-2.5 bg-signal text-bg font-mono text-xs tracking-wider hover:bg-ink transition-colors"
-          >
-            More {'>'}
-          </RouteLink>
-        </div>
+        {projects.length > 4 && (
+          <div className="flex justify-center pt-8 ">
+            <RouteLink
+              route={ROUTES.projects}
+              className="px-5 py-2.5 bg-signal text-bg font-mono text-xs tracking-wider hover:bg-ink transition-colors"
+            >
+              More {'>'}
+            </RouteLink>
+          </div>
+        )}
       </div>
     </section>
   );

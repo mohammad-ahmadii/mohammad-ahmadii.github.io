@@ -29,6 +29,7 @@ export const projects: Project[] = [
       title:
         "it's not available, because it's a internal app of company, you can see it in graph-inc.ir products diagram as 'kiosk' ",
     },
+    scale: 'enterprice',
   },
   {
     id: 'graph-inc-site',
@@ -51,35 +52,38 @@ export const projects: Project[] = [
       imageUrl: asset('assets/images/graph-inc.ir-screenshot.png'),
       title: 'view',
     },
+    scale: 'medium',
   },
   {
-    id: 'azimpakhsh',
-    name: 'azimpakhsh.ir',
+    id: 'kacharlife.com',
+    name: 'kacharlife.com',
     company: 'Memaran Dade',
     role: 'Internship / Junior Front-End Developer',
-    date: '2020',
+    date: '2020 · 4 months',
     location: 'Tabriz',
-    stack: ['React', 'Responsive Design'],
-    description: 'Shopping website',
+    stack: ['React', 'Responsive Design', 'Next.js', 'Redux'],
+    description:
+      'Kachar, an online store for tires and automotive accessories; browse and purchase the products',
     points: [
-      'Developed and launched by React.js.',
       'Converted UI/UX designs into responsive web pages and pixel-perfect',
+      'Implement Typescript on js codes to facilitate in debuging and scaling up.',
     ],
     view: {
-      address: null,
-      imageUrl: '',
-      title: 'Dismissed by company',
+      address: 'https://kacharlife.com/',
+      imageUrl: '/assets/images/kachar.png',
+      title: '',
     },
+    scale: 'medium',
   },
   {
     id: 'mohammad-ahmadii.github.io',
-    name: 'mohammad-ahmadii.github.io',
+    name: 'my portfolio',
     company: 'myself',
     role: 'Front-End Developer',
     date: '2026',
     location: 'Tehran',
     stack: ['React/vite', 'github', 'tailwind'],
-    description: 'it is my personal website to show my info and portfolio and etc.',
+    description: 'it is my portfolio website to show my experiences, projects and etc.',
     points: [
       'Developed by React.js/vite .',
       'Helped by claude and hermes agent to develope.',
@@ -89,8 +93,9 @@ export const projects: Project[] = [
     view: {
       address: 'https://mohammad-ahmadii.github.io/',
       src_address: 'https://github.com/mohammad-ahmadii/mohammad-ahmadii.github.io',
-      imageUrl: '',
+      imageUrl: '/assets/images/potfolio.png',
       title: 'view',
     },
+    scale: 'small',
   },
 ];

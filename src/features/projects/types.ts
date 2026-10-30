@@ -16,4 +16,5 @@ export interface Project {
   description: string;
   points: string[];
   view: ProjectView;
+  scale: 'enterprice' | 'large' | 'medium' | 'small';
 }
