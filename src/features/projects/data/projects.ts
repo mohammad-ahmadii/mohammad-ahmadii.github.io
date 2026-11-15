@@ -98,4 +98,30 @@ export const projects: Project[] = [
     },
     scale: 'small',
   },
+  {
+    id: 'rastegargym.ir',
+    name: 'Rastegargym.ir',
+    company: 'Rastegar sport complex',
+    role: 'Fullstack Developer',
+    date: '2026',
+    location: 'Zanjan',
+    stack: ['NextJs', 'ReactJs', 'tailwind'],
+    description:
+      'This website was created for news and future events of the sports complex, as well as providing services such as training programs, etc.',
+    points: [
+      'Developed by NextJs 16 and tailwind based on figma design.',
+      'Helped by claude and hermes agent to develope.',
+      'Implemented two types of articles and other pages including about us, contact us',
+      'Implemented workout-program flow to users.',
+      'Analyzed customer requirements and applying them to the project.',
+      'Used FSD Arch in folder struct.',
+    ],
+    view: {
+      address: 'https://rastegargym.ir/',
+      src_address: undefined,
+      imageUrl: '/assets/images/rastegargym.png',
+      title: 'view',
+    },
+    scale: 'medium',
+  },
 ];
