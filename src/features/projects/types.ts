@@ -1,6 +1,7 @@
 export interface ProjectView {
   address: string | null;
   src_address?: string;
+  imageUrl_thumb: string;
   imageUrl: string;
   title: string;
 }

@@ -22,8 +22,8 @@ export default function ProjectCard({ project, onPreviewImage }: ProjectCardProp
           >
             <img
               src={
-                project.view.imageUrl
-                  ? project.view.imageUrl
+                project.view.imageUrl_thumb
+                  ? project.view.imageUrl_thumb
                   : '/assets/images/image-placeholder.png'
               }
               className="w-full h-auto object-cover cursor-pointer hover:opacity-80 transition-opacity"

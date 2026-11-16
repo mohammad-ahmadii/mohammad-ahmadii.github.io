@@ -25,7 +25,8 @@ export const projects: Project[] = [
     ],
     view: {
       address: 'https://graph-inc.ir/products/fam/graph-fam',
-      imageUrl: asset('assets/images/vault.png'),
+      imageUrl_thumb: asset('assets/images/projects/vault-thumb.jpg'),
+      imageUrl: asset('assets/images/projects/vault.png'),
       title:
         "it's not available, because it's a internal app of company, you can see it in graph-inc.ir products diagram as 'kiosk' ",
     },
@@ -49,7 +50,8 @@ export const projects: Project[] = [
     ],
     view: {
       address: 'https://graph-inc.ir',
-      imageUrl: asset('assets/images/graph-inc.ir-screenshot.png'),
+      imageUrl_thumb: asset('assets/images/projects/graph-inc.ir-screenshot-thumb.jpg'),
+      imageUrl: asset('assets/images/projects/graph-inc.ir-screenshot.png'),
       title: 'view',
     },
     scale: 'medium',
@@ -70,7 +72,8 @@ export const projects: Project[] = [
     ],
     view: {
       address: 'https://kacharlife.com/',
-      imageUrl: '/assets/images/kachar.png',
+      imageUrl_thumb: '/assets/images/projects/kachar-thumb.jpg',
+      imageUrl: '/assets/images/projects/kachar.png',
       title: '',
     },
     scale: 'medium',
@@ -93,7 +96,8 @@ export const projects: Project[] = [
     view: {
       address: 'https://mohammad-ahmadii.github.io/',
       src_address: 'https://github.com/mohammad-ahmadii/mohammad-ahmadii.github.io',
-      imageUrl: '/assets/images/potfolio.png',
+      imageUrl_thumb: '/assets/images/projects/potfolio-thumb.jpg',
+      imageUrl: '/assets/images/projects/potfolio.png',
       title: 'view',
     },
     scale: 'small',
@@ -119,7 +123,8 @@ export const projects: Project[] = [
     view: {
       address: 'https://rastegargym.ir/',
       src_address: undefined,
-      imageUrl: '/assets/images/rastegargym.png',
+      imageUrl_thumb: '/assets/images/projects/rastegargym-thumb.jpg',
+      imageUrl: '/assets/images/projects/rastegargym.png',
       title: 'view',
     },
     scale: 'medium',
