@@ -37,7 +37,7 @@ export default function Hero() {
           </div>
         </div>
         <div className="max-w-96 rounded-xl border-none overflow-hidden border">
-          <img src="./assets/images/avatar.png" alt="avatar of mohammad ahmadi" />
+          <img src="./assets/images/avatar.jpg" alt="avatar of mohammad ahmadi" />
         </div>
       </div>
     </section>
